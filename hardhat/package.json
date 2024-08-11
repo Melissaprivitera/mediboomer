@@ -1,0 +1,24 @@
+{
+  "name": "mediboomer-contract",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "deploy": "npx hardhat ignition deploy ./ignition/modules/MediBoomer.ts",
+    "deployUtils": "npx hardhat ignition deploy ./ignition/modules/Utils.ts",
+    "node": "npx hardhat node",
+    "compile": "npx hardhat compile",
+    "test": "npx hardhat test"
+  },
+  "devDependencies": {
+    "dotenv": "^16.4.5",
+    "hardhat": "^2.22.5",
+    "prettier": "^3.3.2"
+  },
+  "dependencies": {
+    "@chainlink/contracts": "^1.2.0",
+    "@nomicfoundation/hardhat-toolbox": "^5.0.0",
+    "@openzeppelin/contracts": "^4.9.6",
+    "crypto": "^1.0.1"
+  }
+}
